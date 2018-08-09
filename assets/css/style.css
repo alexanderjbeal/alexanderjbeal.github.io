@@ -187,21 +187,57 @@
     font-weight: 900;
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 500px) {
 
-    .block{
+
+    .intro-container {
+      display: table;
       position: relative;
-      width: 500px;
-      height: 700px;
-      margin: 0px;
-      background: white;
-      border-left: 1px solid grey;
-    }
-    .block-one {
-      background: url('../images/ab.jpg');
+      background-image: url('../images/intro-layer-01.jpg');
+      background-size: contain;
       background-position: center;
-      background-size: cover;
       background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+    #intro-layer-first-name {
+      position: absolute;
+      background-image: url('../images/intro-layer-02.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: -100%;
+    }
+    #intro-layer-body-double {
+      position: absolute;
+      background-image: url('../images/intro-layer-03.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+    #intro-layer-tree {
+      position: absolute;
+      background-image: url('../images/intro-layer-04.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      left: -100%;
+    }
+    #intro-layer-last-name {
+      position: absolute;
+      background-image: url('../images/intro-layer-05.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: -150%;
     }
 
   }
