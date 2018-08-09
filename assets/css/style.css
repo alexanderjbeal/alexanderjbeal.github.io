@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  html, body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    /* background: #2b2769; */
+    text-align: center;
+    margin: 0;
+  }
+
+  h1 {
+    margin: 80px;
+  }
+  h2{
+    font-size: 80px;
+    font-weight: 900;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+    /* Navigation */
+
+    .nav-container {
+      background: white;
+      position: relative;
+      /* height: 80px; */
+      z-index: 2;
+      border-bottom: 1px solid grey;
+    }
+    .nav-logo {
+      position: absolute;
+      color: black;
+      line-height: 80px;
+      left: 30px;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+    .nav-menu{
+      z-index: 5;
+      position: absolute;
+      line-height: 80px;
+      right: 30px;
+      cursor: pointer;
+    }
+    .nav-menu i {
+      color: black;
+    }
+
+    .menu-container {
+      z-index:1;
+      position:fixed;
+      height: 100%;
+      width: 100%;
+      background: white;
+      opacity: 1;
+      /* background: linear-gradient(323deg, #009cff, #005f9c, #013e66); */
+     }
+ 
+    li {
+      list-style-type: none;
+      font-size: 25px;
+      margin-bottom: 10px;
+      font-weight: 900;
+      color: black;
+      text-align: center;
+    }
+    li:nth-last-child() {
+      margin-bottom: 0px;
+    }
+    li i {
+      list-style-type: none;
+      font-weight: 100;
+      color: black;
+      /* color: #013e66; */
+      padding: 10px;
+      margin: 0 5px 0 5px;
+      border: 1px solid black;
+      border-radius: 140px;
+    }
+    li i:hover {
+      color: white;
+      background: black;
+    }
+    .social-icons {
+      font-size: 20px;
+      padding-top: 20px;
+    }
+
+
+    /* INTRO */
+
+    .intro-container {
+      display: table;
+      position: relative;
+      background-image: url('../images/intro-layer-01.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+    #intro-layer-first-name {
+      position: absolute;
+      background-image: url('../images/intro-layer-02.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: -100%;
+    }
+    #intro-layer-body-double {
+      position: absolute;
+      background-image: url('../images/intro-layer-03.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+    #intro-layer-tree {
+      position: absolute;
+      background-image: url('../images/intro-layer-04.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      left: -100%;
+    }
+    #intro-layer-last-name {
+      position: absolute;
+      background-image: url('../images/intro-layer-05.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: -150%;
+    }
+
+    /* Body */
+
+    .body-container {
+      display: block;
+      background: black;
+      width: 100%;
+      height: 800px;
+    }
+
+  /* Horizontal Scroll */
+
+  .horizontal-container{
+    /* margin-top: 50px; */
+    width: 100%;
+    position: relative;
+  }
+  .block{
+    position: relative;
+    width: 1100px;
+    height: 700px;
+    margin: 0px;
+    background: white;
+    border-left: 1px solid grey;
+  }
+  .block-one {
+    background: url('../images/ab.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .block h2 {
+    color: black;
+    font-weight: 900;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .block{
+      position: relative;
+      width: 500px;
+      height: 700px;
+      margin: 0px;
+      background: white;
+      border-left: 1px solid grey;
+    }
+    .block-one {
+      background: url('../images/ab.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+  }
+  
