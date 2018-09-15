@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,800,900,900i|Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Alexander Beal</title>
+</head>
+<body>
+    
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon" onclick="openNav()">&nbsp;</span>
+        </label>
+
+        <div class="navigation__logo-box">
+            <span class="logo">ab</span>
+        </div>
+
+        <div class="navigation__background">
+            <ul class="navigation__list">
+                <li class="navigation__item"><span onclick="home()" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><span onclick="services()" class="navigation__link">Services</a></li>
+                <li class="navigation__item"><span onclick="about()" class="navigation__link">About</a></li>
+                <li class="navigation__item"><span onclick="contact()" class="navigation__link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <header class="header">
+            
+        <div class="header__background-layer-02"></div>
+        <div class="header__background-layer-01"></div>
+        
+        
+
+        <div class="header__text-box--left">
+                
+            <!-- <p class="paragraph">Placeholder</p> -->
+            <!-- <h1 class="heading-primary">
+                <span class="heading-primary--sub">Placeholder</span>
+                <span class="heading-primary--main left">King</span>
+                <span class="heading-primary--main left">Of the</span>
+                <span class="heading-primary--main left">Court</span>
+            </h1> -->
+            <!-- <a href="/games" class="btn btn--gradient btn--header btn--animated">Join my team</a> -->
+            
+        </div>
+        
+    </header>
+
+    <div class="section-portfolio">
+
+        <div class="sidebar">
+            <div class="col-sidebar">
+                Test
+            </div>
+        </div>
+
+        <div class="row-portfolio">
+            <div class="col-1-of-2">
+                Test
+            </div>
+            <div class="col-1-of-2">
+                    Test
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSRulePlugin.min.js'></script>
+    <script src="assets/javascript/menu.js"></script>
+
+    <script>
+        function services() {
+            $(".header").fadeOut(600);
+            $(".navigation__checkbox").trigger('click');
+            $(".section-portfolio").fadeIn(600), 2000;
+        }
+    </script>
+
+</body>
+</html>
