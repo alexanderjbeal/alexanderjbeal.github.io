@@ -25,15 +25,15 @@
         cursor: pointer;
 
             @include breakpoint(tab-port) {
-                bottom: 4.5rem;
-                left: 4.5rem;
+                bottom: 3.5rem;
+                left: 3.5rem;
             }
             
             @include breakpoint(phone) {
                 height: 5rem;
                 width: 5rem;
-                bottom: 4.5rem;
-                left: 4.5rem;
+                bottom: 1.5rem;
+                left: 1.5rem;
             }
     }
 
@@ -83,17 +83,42 @@
         transform: translate(-50%, -50%);
         list-style: none;
         text-align: right;
+
+        @include breakpoint(phone) {
+            padding-top: 10%;
+            text-align: left;
+        }
+    }
+
+    &__profile  {
+        padding-top: 5%;
+        width: 90%;
+        position: absolute;
+        bottom: 0rem;
+        left: 13rem;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+
+        &-link {
+            display: inline-block;
+            padding: 0 2rem;
+        }
     }
 
     &__item {
         margin: 1rem;
+
+        @include breakpoint(phone) {
+            margin: .5rem;
+        }
     }
 
     &__link {
         display: inline-block;
         font-size: 4rem;
         font-weight: 300;
-        letter-spacing: .3rem;
+        letter-spacing: .2rem;
         padding: .25rem 2rem;
         color: $color-black;
         text-decoration: none;
@@ -107,6 +132,10 @@
             background-position: 100%;
             color: $color-white;
             transform: translateX(-1rem);
+        }
+
+        @include breakpoint(phone) {
+            font-size: 3rem;
         }
     }
 

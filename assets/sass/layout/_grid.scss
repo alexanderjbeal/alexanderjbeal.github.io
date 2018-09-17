@@ -3,12 +3,13 @@
     margin: 0 auto;
 
     @include breakpoint(tab-port) {
-        max-width: 50rem;
+        max-width: 75%;
         overflow: scroll;
         height: 60rem;
     }
 
     @include breakpoint(phone) {
+        max-width: 90%;
         overflow: scroll;
         height: 60rem;
     }
@@ -16,23 +17,26 @@
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
 
-        @include breakpoint(tab-port) {
-            margin-bottom: $gutter-vertical-sm;
+        @include breakpoint(phone) {
+            margin-bottom: 0;
         }
     }
 
     @include clearfix;
 
     [class^="col-"] {
-        float: left;
+        float: right;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
             @include breakpoint(tab-port) {
                 margin-right: 0;
-                margin-bottom: $gutter-vertical-sm;
             }
+        }
+
+        @include breakpoint(tab-port) {
+            width: 100% !important;
         }
 
         @include breakpoint(phone) {
@@ -40,6 +44,39 @@
         }
     }
 
+    .project-sidebar {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+        position: fixed;
+
+        @include breakpoint(tab-port) {
+            width: 100%;
+            position: relative;
+            text-align: left;
+        }
+
+        @include breakpoint(phone) {
+            width: 80%;
+            position: relative;
+            text-align: left;
+        }
+    }
+
+    .project-category{
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+        float: right;
+
+        @include breakpoint(tab-port) {
+            width: 100%
+        }
+
+        @include breakpoint(phone) {
+            width: 100%
+        }
+
+        .col-1-of-2 {
+            width: calc((100% - #{$gutter-horizontal}) / 2);
+        }
+    }
 
     .col-1-of-1 {
         width: calc((100% - #{$gutter-horizontal}));
@@ -67,52 +104,5 @@
 
     .col-3-of-4 {
         width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
-    }
-}
-
-
-.section-portfolio {
-
-    .sidebar {
-        width: 20%;
-        height: 100%;
-        float: left;
-    
-        &:not(:last-child) {
-            margin-bottom: $gutter-vertical; 
-        }
-
-        .col-sidebar {
-            width: calc((100% - #{$gutter-horizontal}));
-            background-color: red;
-            height: 100%;
-        }
-    }
-
-    .row-portfolio {
-        width: 80%;
-        float: left;
-        height: 100%;
-    
-        &:not(:last-child) {
-            margin-bottom: $gutter-vertical;
-        }
-
-        @include clearfix;
-
-        [class^="col-"] {
-            float: left;
-    
-            &:not(:last-child) {
-                margin-right: $gutter-horizontal; 
-            }
-        }
-
-        .col-1-of-2 {
-            width: calc((100% - #{$gutter-horizontal}) / 2);
-            height: 100%;
-            background-color: green;
-        }
-        
     }
 }
