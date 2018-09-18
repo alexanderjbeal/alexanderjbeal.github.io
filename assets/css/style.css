@@ -196,6 +196,10 @@ h1 {
     .project-profile {
       padding: 3rem 0 0 0; } }
 
+.card-icon {
+  color: #fff;
+  font-size: 8rem; }
+
 .project-icon {
   display: inline-block; }
   .project-icon--button {
@@ -455,6 +459,26 @@ h1 {
       background-image: url(../images/friend-finder.png);
       background-size: cover;
       background-position: center; }
+    .project-card__picture--4 {
+      height: 100%;
+      background-image: url(../images/back-end-node.png);
+      background-size: cover;
+      background-position: center; }
+    .project-card__picture--5 {
+      height: 100%;
+      background-image: url(../images/back-end-liri.png);
+      background-size: cover;
+      background-position: center; }
+    .project-card__picture--6 {
+      height: 100%;
+      background-image: url(../images/meal-planner.png);
+      background-size: cover;
+      background-position: center; }
+    .project-card__picture--8 {
+      height: 100%;
+      background-image: url(../images/star-wars.png);
+      background-size: cover;
+      background-position: center; }
   .project-card__cta {
     position: absolute;
     top: 50%;
@@ -515,6 +539,26 @@ h1 {
       .project-card__picture--3 {
         height: 100%;
         background-image: url(../images/friend-finder.png);
+        background-size: cover;
+        background-position: center; }
+      .project-card__picture--4 {
+        height: 100%;
+        background-image: url(../images/back-end-node.png);
+        background-size: cover;
+        background-position: center; }
+      .project-card__picture--5 {
+        height: 100%;
+        background-image: url(../images/back-end-liri.png);
+        background-size: cover;
+        background-position: center; }
+      .project-card__picture--6 {
+        height: 100%;
+        background-image: url(../images/meal-planner.png);
+        background-size: cover;
+        background-position: center; }
+      .project-card__picture--8 {
+        height: 100%;
+        background-image: url(../images/star-wars.png);
         background-size: cover;
         background-position: center; }
     .project-card__cta {

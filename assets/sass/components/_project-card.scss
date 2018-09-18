@@ -75,6 +75,34 @@
             background-position: center;
         }
 
+        &--4 {
+            height: 100%;
+            background-image: url(../images/back-end-node.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--5 {
+            height: 100%;
+            background-image: url(../images/back-end-liri.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--6 {
+            height: 100%;
+            background-image: url(../images/meal-planner.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--8 {
+            height: 100%;
+            background-image: url(../images/star-wars.png);
+            background-size: cover;
+            background-position: center;
+        }
+
     }
 
 
@@ -172,6 +200,34 @@
             &--3 {
                 height: 100%;
                 background-image: url(../images/friend-finder.png);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &--4 {
+                height: 100%;
+                background-image: url(../images/back-end-node.png);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &--5 {
+                height: 100%;
+                background-image: url(../images/back-end-liri.png);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &--6 {
+                height: 100%;
+                background-image: url(../images/meal-planner.png);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &--8 {
+                height: 100%;
+                background-image: url(../images/star-wars.png);
                 background-size: cover;
                 background-position: center;
             }
