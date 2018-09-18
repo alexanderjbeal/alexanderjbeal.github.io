@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,800,900,900i|Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
     <title>Alexander Beal</title>
 </head>
@@ -51,8 +51,8 @@
     </div>
 
     <div class="alpha-background">&nbsp;</div>
-    
-    <header class="header">
+
+    <header class="header" id="header">
         <div class="header__background-layer-02"></div>
         <div class="header__background-layer-01"></div>
 
@@ -68,8 +68,8 @@
             <!-- <a href="/games" class="btn btn--gradient btn--header btn--animated">Join my team</a> -->
             
         </div>
-    </header>
-
+	</header>
+	
     <section class="section-project">
 
         <div class="row">
@@ -131,7 +131,7 @@
                 <!-- Below Ends Project Item -->
                 </div>
 
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up">
                     
                         <div class="col-1-of-2">
                             <!-- Start Card -->
@@ -180,7 +180,7 @@
 
                     <div class="project-item">
                     
-                            <div class="col-1-of-2">
+                            <div class="col-1-of-2" data-aos="fade-up">
                                 <!-- Start Card -->
                                 <div class="project-card">
                                     <div class="project-card__side project-card__side--front">
@@ -231,25 +231,27 @@
         <!-- Below Ends Row -->
         </div>
 
-    </section>
+	</section>
+	
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSRulePlugin.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSRulePlugin.min.js'></script>
     <script src="assets/javascript/menu.js"></script>
 
     <script>
 
         // background = () => {
 
-        //     do {
         //         $(".alpha-background").fadeIn(600);
         //         $(".alpha-background").css({
         //             "background-color" : "rgba(0,0,0,0.3)"
         //         });
-        //     }
-        //     while ((".navigation__checkbox").attr("checked", false) && $(".navigation__checkbox").trigger('click') );
-        // }
+		// }
+
+		// end_background = () => {
+
+		// }
 
         home = () => {
             $(".navigation__checkbox").trigger('click');
@@ -265,7 +267,7 @@
 
         services = () => {
             $(".header").fadeOut(600);
-            $(".navigation__checkbox").trigger('click');
+			$(".navigation__checkbox").trigger('click');
             $(".section-project").css({
                 "display" : "table",
                 "animation" : "fadeIn 1.25s ease .75s",
@@ -279,7 +281,8 @@
 
         contact = () => {
             $(".navigation__checkbox").trigger('click');
-        }
+		}
+
     </script>
 
 </body>
