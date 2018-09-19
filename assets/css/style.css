@@ -859,22 +859,22 @@ h1 {
   height: 4rem;
   width: 4rem;
   position: fixed;
-  bottom: 4.5rem;
-  left: 4.5rem;
+  top: 4.5rem;
+  right: 4.5rem;
   border-radius: 50%;
   z-index: 5000;
   text-align: center;
   cursor: pointer; }
   @media (max-width: 56.25em) {
     .navigation__button {
-      bottom: 3.5rem;
-      left: 3.5rem; } }
+      top: 4.5rem;
+      right: 3.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
       height: 5rem;
       width: 5rem;
-      bottom: 1.5rem;
-      left: 1.5rem; } }
+      top: 4.5rem;
+      right: 3.5rem; } }
 
 .navigation__background {
   opacity: 1;
@@ -896,7 +896,7 @@ h1 {
 
 .navigation__list {
   padding-top: 5%;
-  width: 90%;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;

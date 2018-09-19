@@ -16,8 +16,8 @@
         height: 4rem;
         width: 4rem;
         position: fixed;
-        bottom: 4.5rem;
-        left: 4.5rem;
+        top: 4.5rem;
+        right: 4.5rem;
         border-radius: 50%;
         z-index: 5000;
         // box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -25,15 +25,15 @@
         cursor: pointer;
 
             @include breakpoint(tab-port) {
-                bottom: 3.5rem;
-                left: 3.5rem;
+                top: 4.5rem;
+                right: 3.5rem;
             }
             
             @include breakpoint(phone) {
                 height: 5rem;
                 width: 5rem;
-                bottom: 1.5rem;
-                left: 1.5rem;
+                top: 4.5rem;
+                right: 3.5rem;
             }
     }
 
@@ -76,7 +76,7 @@
 
     &__list {
         padding-top: 5%;
-        width: 90%;
+        width: 80%;
         position: absolute;
         top: 50%;
         left: 50%;
