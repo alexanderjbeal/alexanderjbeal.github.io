@@ -3,6 +3,8 @@ var menuIcon = $(".navigation__button");
 var menuToggle = new TimelineMax({ paused:true, reversed:true });
 var slideDown = $(".navigation__background");
 var listItems = $(".navigation__list > li");
+let navButton = $(".navigation__checkbox");
+let navLink = $("navigation__link");
 
 TweenMax.set(slideDown, {
       y: '-100%',
@@ -33,10 +35,12 @@ menuIcon.click(function () {
 // });
 
 listItems.click(function () {
-  menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
+  menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse(), navButton.trigger('click');
 });
 
-
+navLink.click(function () {
+  navButton.trigger('click');
+})
 
 
 
