@@ -34,7 +34,6 @@ menuIcon.click(function () {
 
 listItems.click(function () {
   menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
-  $(".navigation__checkbox").trigger('click');
 });
 
 
