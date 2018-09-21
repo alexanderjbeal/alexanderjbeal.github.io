@@ -103,6 +103,13 @@
             background-position: center;
         }
 
+        &--etr {
+            height: 100%;
+            background-image: url(../images/e-the-real.png);
+            background-size: cover;
+            background-position: center;
+        }
+
     }
 
 
@@ -228,6 +235,13 @@
             &--8 {
                 height: 100%;
                 background-image: url(../images/star-wars.png);
+                background-size: cover;
+                background-position: center;
+            }
+
+            &--etr {
+                height: 100%;
+                background-image: url(../images/e-the-real.png);
                 background-size: cover;
                 background-position: center;
             }

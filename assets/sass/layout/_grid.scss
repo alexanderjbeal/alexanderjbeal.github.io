@@ -44,6 +44,14 @@
         }
     }
 
+    [class^="project-category"] {
+        margin-top: 12rem;
+
+        &:not(:last-child) {
+            margin-top: 0;
+        }
+    }
+
     .project-sidebar {
         width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
         position: fixed;

@@ -479,6 +479,11 @@ h1 {
       background-image: url(../images/star-wars.png);
       background-size: cover;
       background-position: center; }
+    .project-card__picture--etr {
+      height: 100%;
+      background-image: url(../images/e-the-real.png);
+      background-size: cover;
+      background-position: center; }
   .project-card__cta {
     position: absolute;
     top: 50%;
@@ -559,6 +564,11 @@ h1 {
       .project-card__picture--8 {
         height: 100%;
         background-image: url(../images/star-wars.png);
+        background-size: cover;
+        background-position: center; }
+      .project-card__picture--etr {
+        height: 100%;
+        background-image: url(../images/e-the-real.png);
         background-size: cover;
         background-position: center; }
     .project-card__cta {
@@ -705,6 +715,10 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .row [class^="col-"] {
         width: 100% !important; } }
+  .row [class^="project-category"] {
+    margin-top: 12rem; }
+    .row [class^="project-category"]:not(:last-child) {
+      margin-top: 0; }
   .row .project-sidebar {
     width: calc((100% - 3 * 4rem) / 4);
     position: fixed; }
