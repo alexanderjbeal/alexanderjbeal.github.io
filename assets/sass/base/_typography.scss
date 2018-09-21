@@ -130,6 +130,21 @@ h1 {
         display: inline-block;
         padding: 0 .5rem 3rem .5rem;
     }
+
+    &--link {
+        text-decoration: none;
+        color: $color-black;
+        padding-right: 2rem;
+    
+        &:link,
+        &:visited {
+            color: $color-black;
+        }
+    
+        &:hover {
+            color: $color-black;
+        }
+    }
 }
 
 .project-text {
