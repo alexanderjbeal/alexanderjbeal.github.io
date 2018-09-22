@@ -148,7 +148,7 @@ h1 {
         @include breakpoint(phone) {
             font-size: 1.7rem;
             display: inline-block;
-            padding: 0 .5rem 3rem .5rem;
+            padding: 0 .1rem 3rem .1rem;
         }
     }
 }
