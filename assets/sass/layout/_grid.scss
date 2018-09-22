@@ -86,6 +86,28 @@
         }
     }
 
+    .project-applications, 
+    .project-design {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+        float: right;
+
+        @include breakpoint(tab-port) {
+            width: 100%
+        }
+
+        @include breakpoint(phone) {
+            width: 100%
+        }
+
+        .col-1-of-2 {
+            width: calc((100% - #{$gutter-horizontal}) / 2);
+        }
+    }
+
+    .project-design {
+        display: none;
+    }
+
     .col-1-of-1 {
         width: calc((100% - #{$gutter-horizontal}));
     }

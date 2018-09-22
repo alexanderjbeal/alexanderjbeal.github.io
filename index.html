@@ -26,7 +26,7 @@
         <div class="navigation__background">
             <ul class="navigation__list">
                 <li class="navigation__item"><span onclick="home()" class="navigation__link">Home</a></li>
-                <li class="navigation__item"><span onclick="services()" class="navigation__link">Services</a></li>
+                <li class="navigation__item"><span onclick="services()" class="navigation__link">Portfolio</a></li>
                 <li class="navigation__item"><span onclick="about()" class="navigation__link">About</a></li>
                 <li class="navigation__item"><span onclick="contact()" class="navigation__link">Contact</a></li>
             </ul>
@@ -69,13 +69,13 @@
                     Websites
                 </h4>
                 <h4 class="heading-nav">
-                        <a href="#section-applications" class="heading-nav--link">Applications</a>
+                        <a href="#" class="heading-nav--link" onclick="applications()">Applications</a>
                 </h4>
                 <h4 class="heading-nav">
-                    <a href="#section-design" class="heading-nav--link">Design</a>
+                    <a href="#" class="heading-nav--link" onclick="design()">Design</a>
                 </h4>
             </div>
-            <div class="project-category">
+            <div class="project-applications">
                 <h1>
                     <span class="heading-primary--category" id="section-applications">Applications</span>
                 </h1>
@@ -347,7 +347,7 @@
             <!-- Below Ends Project Category -->
             </div>
 
-            <div class="project-category">
+            <div class="project-design">
                 <h1>
                     <span class="heading-primary--category" id="section-design">Design</span>
                 </h1>
@@ -426,8 +426,29 @@
 
         services = () => {
             $(".header").fadeOut(600);
-			// $(".navigation__checkbox").trigger('click');
+            // $(".navigation__checkbox").trigger('click');
             $(".section-project").css({
+                "display" : "table",
+                "animation" : "fadeIn 1.25s ease .75s",
+                "animation-fill-mode" : "backwards"
+            });
+            $(".project-applications").fadeIn(600);
+        }
+
+        applications = () => {
+            $(".project-design").fadeOut(600);
+			// $(".navigation__checkbox").trigger('click');
+            $(".project-applications").css({
+                "display" : "table",
+                "animation" : "fadeIn 1.25s ease .75s",
+                "animation-fill-mode" : "backwards"
+            });
+        }
+
+        design = () => {
+            $(".project-applications").fadeOut(600);
+			// $(".navigation__checkbox").trigger('click');
+            $(".project-design").css({
                 "display" : "table",
                 "animation" : "fadeIn 1.25s ease .75s",
                 "animation-fill-mode" : "backwards"

@@ -39,7 +39,7 @@
 
     &__background {
         opacity: 1;
-        height: 75%;
+        height: 600px;
         width: 100%;
         position: fixed;
         
@@ -61,6 +61,10 @@
         //     top: 4rem;
         //     right: 4rem;
         // }
+
+        @include breakpoint(phone) {
+            height: 550px;
+        }
     }
 
     &__nav {

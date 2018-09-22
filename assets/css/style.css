@@ -175,7 +175,7 @@ h1 {
       padding: 0 .5rem 3rem .5rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-nav {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       display: inline-block;
       padding: 0 .5rem 3rem .5rem; } }
   .heading-nav--link {
@@ -186,6 +186,11 @@ h1 {
       color: #000; }
     .heading-nav--link:hover {
       color: #000; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-nav--link {
+        font-size: 1.7rem;
+        display: inline-block;
+        padding: 0 .5rem 3rem .5rem; } }
 
 .project-text {
   font-size: 3rem;
@@ -751,6 +756,23 @@ h1 {
         width: 100%; } }
     .row .project-category .col-1-of-2 {
       width: calc((100% - 4rem) / 2); }
+  .row .project-applications,
+  .row .project-design {
+    width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem);
+    float: right; }
+    @media (max-width: 56.25em) {
+      .row .project-applications,
+      .row .project-design {
+        width: 100%; } }
+    @media only screen and (max-width: 37.5em) {
+      .row .project-applications,
+      .row .project-design {
+        width: 100%; } }
+    .row .project-applications .col-1-of-2,
+    .row .project-design .col-1-of-2 {
+      width: calc((100% - 4rem) / 2); }
+  .row .project-design {
+    display: none; }
   .row .col-1-of-1 {
     width: calc((100% - 4rem)); }
   .row .col-1-of-2 {
@@ -900,11 +922,14 @@ h1 {
 
 .navigation__background {
   opacity: 1;
-  height: 75%;
+  height: 600px;
   width: 100%;
   position: fixed;
   background-color: #fff;
   z-index: 4000; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      height: 550px; } }
 
 .navigation__nav {
   height: 100vh;

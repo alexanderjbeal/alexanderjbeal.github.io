@@ -126,7 +126,7 @@ h1 {
     }
 
     @include breakpoint(phone) {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         display: inline-block;
         padding: 0 .5rem 3rem .5rem;
     }
@@ -143,6 +143,12 @@ h1 {
     
         &:hover {
             color: $color-black;
+        }
+
+        @include breakpoint(phone) {
+            font-size: 1.7rem;
+            display: inline-block;
+            padding: 0 .5rem 3rem .5rem;
         }
     }
 }
