@@ -4,13 +4,13 @@
 
     @include breakpoint(tab-port) {
         max-width: 75%;
-        overflow: scroll;
+        // overflow: scroll;
         height: 60rem;
     }
 
     @include breakpoint(phone) {
         max-width: 90%;
-        overflow: scroll;
+        // overflow: scroll;
         height: 60rem;
     }
 

@@ -699,12 +699,10 @@ h1 {
   @media (max-width: 56.25em) {
     .row {
       max-width: 75%;
-      overflow: scroll;
       height: 60rem; } }
   @media only screen and (max-width: 37.5em) {
     .row {
       max-width: 90%;
-      overflow: scroll;
       height: 60rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
