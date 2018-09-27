@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alexanderjbeal/alexanderjbeal.github.io#readme",
   "dependencies": {
+    "aos": "^2.3.3",
     "node-sass": "^4.9.3"
   }
 }

@@ -10,6 +10,16 @@
 
     <title>Alexander Beal</title>
 </head>
+
+    <script>
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+          delay: 100,
+        });
+      </script>
+
 <body>
     
     <div class="navigation">
@@ -271,8 +281,8 @@
 					</div>
 				</div>
 
-				<div class="project-item">
-					<div class="col-1-of-2" data-aos="fade-up">
+				<div class="project-item" data-aos="fade-up">
+					<div class="col-1-of-2">
 						<div class="project-card">
 							<div class="project-card__side project-card__side--front">
 								<div class="project-card__picture">
@@ -308,7 +318,7 @@
 					</div>
 				</div>
 				
-				<div class="project-item">
+				<div class="project-item" data-aos="fade-up">
 					<div class="col-1-of-2" data-aos="fade-up">
 						<div class="project-card">
 							<div class="project-card__side project-card__side--front">
@@ -399,7 +409,6 @@
     <script src="assets/javascript/menu.js"></script>
 
     <script>
-
         // background = () => {
 
         //         $(".alpha-background").fadeIn(600);
@@ -436,21 +445,21 @@
         }
 
         applications = () => {
-            $(".project-design").fadeOut(600);
+            $(".project-design").fadeOut(0);
 			// $(".navigation__checkbox").trigger('click');
             $(".project-applications").css({
                 "display" : "table",
-                "animation" : "fadeIn 1.25s ease .75s",
+                "animation" : "fadeIn 1.25s ease .25s",
                 "animation-fill-mode" : "backwards"
             });
         }
 
         design = () => {
-            $(".project-applications").fadeOut(600);
+            $(".project-applications").fadeOut(0);
 			// $(".navigation__checkbox").trigger('click');
             $(".project-design").css({
                 "display" : "table",
-                "animation" : "fadeIn 1.25s ease .75s",
+                "animation" : "fadeIn 1.25s ease .25s",
                 "animation-fill-mode" : "backwards"
             });
         }
@@ -461,7 +470,7 @@
 
         contact = () => {
             // $(".navigation__checkbox").trigger('click');
-		}
+        }
 
     </script>
 
